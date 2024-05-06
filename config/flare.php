@@ -69,6 +69,8 @@ return [
                 'Authorization',
                 'Cookie',
                 'Set-Cookie',
+                'X-CSRF-TOKEN',
+                'X-XSRF-TOKEN',
             ]
         ],
     ],
