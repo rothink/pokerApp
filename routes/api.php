@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\URL;
@@ -11,3 +12,5 @@ Route::get('/user', function (Request $request) {
 Route::get('/health', function (\Illuminate\Http\Request $request) {
     return response()->json(['apitest' => true]);
 });
+
+Route::post('login', [AuthenticatedSessionController::class, 'store']);
