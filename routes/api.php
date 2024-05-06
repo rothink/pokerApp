@@ -11,4 +11,3 @@ Route::get('/user', function (Request $request) {
 Route::get('/health', function (\Illuminate\Http\Request $request) {
     return response()->json(['apitest' => true]);
 });
-URL::forceScheme('https');
